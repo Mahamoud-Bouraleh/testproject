@@ -134,4 +134,56 @@
     width: 30px;
     height: 30px;
   }
+  /* Styles pour la section IA */
+.ai-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+.ai-text {
+  width: 50%;
+  text-align: left;
+}
+
+.ai-image img {
+  width: 100%;
+  max-width: 400px; /* Vous pouvez ajuster la taille de l'image selon vos besoins */
+  height: auto;
+}
+
+/* Styles pour les petits écrans (moins de 600px) */
+@media (max-width: 600px) {
+  .ai-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ai-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .ai-image img {
+    max-width: 80%;
+  }
+}
+
+/* Styles pour les tablettes (de 600px à 1024px) */
+@media (max-width: 1024px) {
+  .ai-section {
+    flex-direction: row;
+  }
+
+  .ai-text {
+    width: 60%;
+  }
+
+  .ai-image img {
+    max-width: 90%;
+  }
+}
+
 }
