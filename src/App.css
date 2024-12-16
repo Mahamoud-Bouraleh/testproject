@@ -1,0 +1,137 @@
+/* Styles généraux */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.App-header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.App-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.App-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Styles pour les écrans mobiles (moins de 600px) */
+@media (max-width: 600px) {
+  .App-header nav ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .App-header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .App-footer {
+    position: relative;
+    bottom: auto;
+    padding: 15px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Styles pour les tablettes (de 600px à 1024px) */
+@media (max-width: 1024px) {
+  .App-header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .App-footer {
+    position: relative;
+    bottom: auto;
+    padding: 18px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    margin: 0 12px;
+  }
+
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Styles pour les écrans plus grands (ordinateurs) */
+@media (min-width: 1025px) {
+  .App-header nav ul {
+    text-align: center;
+  }
+
+  .App-header nav ul li {
+    display: inline;
+    margin: 0 30px;
+  }
+
+  .App-footer {
+    position: relative;
+    bottom: auto;
+    padding: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    margin: 0 15px;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+}
